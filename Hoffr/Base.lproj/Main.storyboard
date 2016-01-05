@@ -1,25 +1,208 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hnl-Fh-QDY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Hoffr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to Hoffr! " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxb-r4-h95">
+                                <rect key="frame" x="80" y="106" width="160" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Login with the Facebook or just explore the app." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abB-DK-GRP">
+                                <rect key="frame" x="-5" y="144" width="331" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfJ-qH-h24">
+                                <rect key="frame" x="40" y="238" width="240" height="48"/>
+                                <state key="normal" title="Explore Hoffr"/>
+                                <connections>
+                                    <action selector="dontLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbH-ox-qzY"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-dc-vqz" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="40" y="182" width="240" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lxb-r4-h95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20h-ck-L7N"/>
+                            <constraint firstItem="XfJ-qH-h24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Gm-1Z-gvh"/>
+                            <constraint firstItem="abB-DK-GRP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aa3-j7-F8o"/>
+                            <constraint firstItem="mGz-dc-vqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="osl-2k-WnR"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="YJE-Eb-i0F"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dontLoginButton" destination="XfJ-qH-h24" id="OsN-ew-5Q3"/>
+                        <outlet property="loginButton" destination="mGz-dc-vqz" id="Q7R-Ri-vu0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="962" y="-42"/>
+        </scene>
+        <!--ManagePortfolio1.0-->
+        <scene sceneID="ry7-a0-6vL">
+            <objects>
+                <viewController title="ManagePortfolio1.0" id="5wm-h8-aQh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vu1-Fy-7NM"/>
+                        <viewControllerLayoutGuide type="bottom" id="05N-GB-yy4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vhe-at-133">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sXP-hc-eYF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caq-Av-LB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="995"/>
+        </scene>
+        <!--SearchPage-->
+        <scene sceneID="kaR-1l-Wuv">
+            <objects>
+                <viewController storyboardIdentifier="SearchPageViewController" title="SearchPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XVv-1n-KvE" userLabel="SearchPage" customClass="SearchPageViewController" customModule="Hoffr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y5y-OD-oGq"/>
+                        <viewControllerLayoutGuide type="bottom" id="lQI-4M-xfE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ogi-E2-WoC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="230" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="htK-e3-yrJ">
+                                <rect key="frame" x="20" y="20" width="280" height="491"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XVv-1n-KvE" id="Ukz-sT-M2e"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lQI-4M-xfE" firstAttribute="top" secondItem="htK-e3-yrJ" secondAttribute="bottom" constant="8" id="QJb-ju-gzP"/>
+                            <constraint firstItem="htK-e3-yrJ" firstAttribute="trailing" secondItem="ogi-E2-WoC" secondAttribute="trailingMargin" id="TdS-mu-wiu"/>
+                            <constraint firstItem="htK-e3-yrJ" firstAttribute="leading" secondItem="ogi-E2-WoC" secondAttribute="leadingMargin" id="ixC-dT-S9t"/>
+                            <constraint firstItem="htK-e3-yrJ" firstAttribute="top" secondItem="ogi-E2-WoC" secondAttribute="topMargin" constant="20" id="kGf-Zb-y3q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UIB-YE-keO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="htK-e3-yrJ" id="Ij7-5t-Uhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7z-0f-QXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="305"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="Zbp-FP-Bg1">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" id="9K0-cr-y5i" customClass="TabBarController" customModule="Hoffr" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wrS-H9-0xv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BiB-5b-Y7q" kind="relationship" relationship="viewControllers" id="w1f-fA-grg"/>
+                        <segue destination="ypJ-Yv-n0r" kind="relationship" relationship="viewControllers" id="eqh-mA-poH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spD-3x-MYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="643"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E6i-NF-W7a">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNavigatonController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hnl-Fh-QDY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d6N-Is-1Vg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7CQ-n8-PtJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIu-mb-zZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="-42"/>
+        </scene>
+        <!--SearchNavigationController-->
+        <scene sceneID="jaN-pT-ADe">
+            <objects>
+                <navigationController title="SearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="BiB-5b-Y7q" userLabel="SearchNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search Hoffr" image="searchicontemp" id="7At-7y-cha"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5t8-zM-GGP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XVv-1n-KvE" kind="relationship" relationship="rootViewController" id="dOL-os-vWP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ea7-XR-g6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="305"/>
+        </scene>
+        <!--PortfolioNavigationController-->
+        <scene sceneID="1g6-AT-Slr">
+            <objects>
+                <navigationController title="PortfolioNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ypJ-Yv-n0r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Ldx-eU-NCU"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HVz-Ef-k1e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5wm-h8-aQh" kind="relationship" relationship="rootViewController" id="xpM-9Z-iCf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTo-TL-piw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416" y="995"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="searchicontemp" width="25" height="24"/>
+    </resources>
 </document>

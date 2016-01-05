@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842D95801C317CA100AF9D68 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D957F1C317CA100AF9D68 /* TabBarController.swift */; };
+		842D95821C3195A700AF9D68 /* SearchPageListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D95811C3195A700AF9D68 /* SearchPageListingCell.swift */; };
+		842D95841C3196DA00AF9D68 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D95831C3196DA00AF9D68 /* Listing.swift */; };
+		842D95871C31BF3400AF9D68 /* SearchPageListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842D95861C31BF3400AF9D68 /* SearchPageListingCell.xib */; };
+		842D958B1C357ED700AF9D68 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D958A1C357ED700AF9D68 /* APIManager.swift */; };
+		8442010E1C1EF7AA007D51D0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442010D1C1EF7AA007D51D0 /* FBSDKCoreKit.framework */; };
+		844201101C1EF7C2007D51D0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442010F1C1EF7C2007D51D0 /* FBSDKLoginKit.framework */; };
+		8453AA971C1F10B400169629 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453AA961C1F10B400169629 /* User.swift */; };
+		8453AA991C1F52CE00169629 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453AA981C1F52CE00169629 /* SearchPageViewController.swift */; };
 		84D49DB91C174E7000ECDA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D49DB81C174E7000ECDA80 /* AppDelegate.swift */; };
-		84D49DBB1C174E7000ECDA80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D49DBA1C174E7000ECDA80 /* ViewController.swift */; };
+		84D49DBB1C174E7000ECDA80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D49DBA1C174E7000ECDA80 /* LoginViewController.swift */; };
 		84D49DBE1C174E7000ECDA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D49DBC1C174E7000ECDA80 /* Main.storyboard */; };
 		84D49DC01C174E7000ECDA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D49DBF1C174E7000ECDA80 /* Assets.xcassets */; };
 		84D49DC31C174E7000ECDA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D49DC11C174E7000ECDA80 /* LaunchScreen.storyboard */; };
@@ -34,9 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842D957F1C317CA100AF9D68 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		842D95811C3195A700AF9D68 /* SearchPageListingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPageListingCell.swift; sourceTree = "<group>"; };
+		842D95831C3196DA00AF9D68 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		842D95861C31BF3400AF9D68 /* SearchPageListingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchPageListingCell.xib; sourceTree = "<group>"; };
+		842D958A1C357ED700AF9D68 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8442010D1C1EF7AA007D51D0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8442010F1C1EF7C2007D51D0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8453AA961C1F10B400169629 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8453AA981C1F52CE00169629 /* SearchPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
 		84D49DB51C174E7000ECDA80 /* Hoffr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoffr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D49DB81C174E7000ECDA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D49DBA1C174E7000ECDA80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84D49DBA1C174E7000ECDA80 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84D49DBD1C174E7000ECDA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D49DBF1C174E7000ECDA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D49DC21C174E7000ECDA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +65,7 @@
 		84D49DD41C174E7000ECDA80 /* HoffrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoffrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D49DD81C174E7000ECDA80 /* HoffrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoffrUITests.swift; sourceTree = "<group>"; };
 		84D49DDA1C174E7000ECDA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D49DE81C174EAB00ECDA80 /* Hoffr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Hoffr-Bridging-Header.h"; path = "Hoffr/Hoffr-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844201101C1EF7C2007D51D0 /* FBSDKLoginKit.framework in Frameworks */,
+				8442010E1C1EF7AA007D51D0 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +95,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842D95851C3196E800AF9D68 /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				842D95831C3196DA00AF9D68 /* Listing.swift */,
+				842D95811C3195A700AF9D68 /* SearchPageListingCell.swift */,
+				8453AA981C1F52CE00169629 /* SearchPageViewController.swift */,
+				842D95861C31BF3400AF9D68 /* SearchPageListingCell.xib */,
+			);
+			name = SearchPage;
+			sourceTree = "<group>";
+		};
 		84D49DAC1C174E7000ECDA80 = {
 			isa = PBXGroup;
 			children = (
+				84D49DE81C174EAB00ECDA80 /* Hoffr-Bridging-Header.h */,
 				84D49DB71C174E7000ECDA80 /* Hoffr */,
 				84D49DCC1C174E7000ECDA80 /* HoffrTests */,
 				84D49DD71C174E7000ECDA80 /* HoffrUITests */,
 				84D49DB61C174E7000ECDA80 /* Products */,
+				8442010D1C1EF7AA007D51D0 /* FBSDKCoreKit.framework */,
+				8442010F1C1EF7C2007D51D0 /* FBSDKLoginKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +132,16 @@
 		84D49DB71C174E7000ECDA80 /* Hoffr */ = {
 			isa = PBXGroup;
 			children = (
+				842D95851C3196E800AF9D68 /* SearchPage */,
 				84D49DB81C174E7000ECDA80 /* AppDelegate.swift */,
-				84D49DBA1C174E7000ECDA80 /* ViewController.swift */,
+				842D958A1C357ED700AF9D68 /* APIManager.swift */,
+				84D49DBA1C174E7000ECDA80 /* LoginViewController.swift */,
 				84D49DBC1C174E7000ECDA80 /* Main.storyboard */,
 				84D49DBF1C174E7000ECDA80 /* Assets.xcassets */,
 				84D49DC11C174E7000ECDA80 /* LaunchScreen.storyboard */,
 				84D49DC41C174E7000ECDA80 /* Info.plist */,
+				8453AA961C1F10B400169629 /* User.swift */,
+				842D957F1C317CA100AF9D68 /* TabBarController.swift */,
 			);
 			path = Hoffr;
 			sourceTree = "<group>";
@@ -232,6 +271,7 @@
 				84D49DC31C174E7000ECDA80 /* LaunchScreen.storyboard in Resources */,
 				84D49DC01C174E7000ECDA80 /* Assets.xcassets in Resources */,
 				84D49DBE1C174E7000ECDA80 /* Main.storyboard in Resources */,
+				842D95871C31BF3400AF9D68 /* SearchPageListingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D49DBB1C174E7000ECDA80 /* ViewController.swift in Sources */,
+				842D958B1C357ED700AF9D68 /* APIManager.swift in Sources */,
+				84D49DBB1C174E7000ECDA80 /* LoginViewController.swift in Sources */,
+				842D95841C3196DA00AF9D68 /* Listing.swift in Sources */,
 				84D49DB91C174E7000ECDA80 /* AppDelegate.swift in Sources */,
+				8453AA971C1F10B400169629 /* User.swift in Sources */,
+				842D95801C317CA100AF9D68 /* TabBarController.swift in Sources */,
+				8453AA991C1F52CE00169629 /* SearchPageViewController.swift in Sources */,
+				842D95821C3195A700AF9D68 /* SearchPageListingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +443,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Hoffr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.admin.Hoffr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Hoffr/Hoffr-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -408,10 +459,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Hoffr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.admin.Hoffr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Hoffr/Hoffr-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +538,7 @@
 				84D49DDF1C174E7000ECDA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D49DE01C174E7000ECDA80 /* Build configuration list for PBXNativeTarget "HoffrTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +547,7 @@
 				84D49DE21C174E7000ECDA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D49DE31C174E7000ECDA80 /* Build configuration list for PBXNativeTarget "HoffrUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +556,7 @@
 				84D49DE51C174E7000ECDA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
