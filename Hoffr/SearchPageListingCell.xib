@@ -37,7 +37,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="idLabel" destination="pzf-lD-0LB" id="QK8-sA-TvG"/>
+                <outlet property="descriptionLabel" destination="pzf-lD-0LB" id="uVt-1d-Z93"/>
                 <outlet property="listingImage" destination="1Cb-fB-hq3" id="hEa-xe-bTK"/>
             </connections>
             <point key="canvasLocation" x="339" y="156"/>

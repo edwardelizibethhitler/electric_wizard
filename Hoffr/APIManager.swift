@@ -25,7 +25,6 @@ class APIManager: NSObject {
                 if(data != nil){
                     do{
                         let json: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)[0] as! NSDictionary
-                    
                         dispatch_async(dispatch_get_main_queue()){
                             completion(result:json)
                         }

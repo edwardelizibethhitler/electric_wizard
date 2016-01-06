@@ -10,7 +10,7 @@ import UIKit
 
 class SearchPageListingCell: UITableViewCell {
 
-    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var listingImage: UIImageView!
     
     var property_id: Int?
