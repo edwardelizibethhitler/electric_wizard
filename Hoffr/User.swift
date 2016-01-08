@@ -13,7 +13,7 @@ import Foundation
 class User {
     
     private var userID: Int
-    
+    private var locationEnabled: Bool = false //does the user want to use locaation services
     
     static let theUser = User() //init the singleton
     
@@ -24,6 +24,14 @@ class User {
     
     func setUserID(id: Int){
         userID = id
+    }
+    
+    func enableLocation(){
+        locationEnabled = true
+    }
+    
+    func disableLocation(){
+        locationEnabled = false
     }
     
     func works(){

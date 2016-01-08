@@ -11,7 +11,10 @@ import UIKit
 class SearchResultsController: UITableViewController, UISearchResultsUpdating {
 
     let sectionsTableIdentifier = "SectionTableIdentifier"
-    
+    var listings: [NSDictionary] = [NSDictionary]() //will hold results of the search
+    let apiManager = APIManager.sharedInstance
+    let forRentButtonIndex = 1
+    let roomRentButtonIndex = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,10 +43,24 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         let searchString = searchController.searchBar.text
         let buttonIndex = searchController.searchBar.selectedScopeButtonIndex
-        
-        var listings: [NSDictionary] = [NSDictionary]() //will hold the results of the search
+        var propertyType = "for_sale_listing"
+        listings.removeAll()
+        if buttonIndex == forRentButtonIndex {
+            propertyType = "for_rent_listing"
+        }
+        else if buttonIndex == roomRentButtonIndex{
+            propertyType = "rent_room_listing"
+        }
         
         //NOW NEED TO QUERY THE SEARCH ENGINE AND HANDLE THE RESULTS
+        if !searchString!.isEmpty {
+            let queryURL = "/solr/hoffr/select . .\(propertyType) etc\(searchString)"
+            
+            /*apiManager.get_JSON(queryURL){result -> Void in
+               //get search results and put them in listings array
+            }*/
+        }
+        
     }
 
     /*

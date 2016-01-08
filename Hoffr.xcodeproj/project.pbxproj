@@ -13,6 +13,8 @@
 		842D95871C31BF3400AF9D68 /* SearchPageListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842D95861C31BF3400AF9D68 /* SearchPageListingCell.xib */; };
 		842D958B1C357ED700AF9D68 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D958A1C357ED700AF9D68 /* APIManager.swift */; };
 		842D958D1C3C28B700AF9D68 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D958C1C3C28B700AF9D68 /* SearchResultsController.swift */; };
+		842D95931C3EBF4F00AF9D68 /* SaleFilterPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842D95921C3EBF4F00AF9D68 /* SaleFilterPopup.xib */; };
+		842D95981C3FEEDB00AF9D68 /* ViewListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D95971C3FEEDB00AF9D68 /* ViewListingController.swift */; };
 		8442010E1C1EF7AA007D51D0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442010D1C1EF7AA007D51D0 /* FBSDKCoreKit.framework */; };
 		844201101C1EF7C2007D51D0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442010F1C1EF7C2007D51D0 /* FBSDKLoginKit.framework */; };
 		8453AA971C1F10B400169629 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453AA961C1F10B400169629 /* User.swift */; };
@@ -50,6 +52,8 @@
 		842D95861C31BF3400AF9D68 /* SearchPageListingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchPageListingCell.xib; sourceTree = "<group>"; };
 		842D958A1C357ED700AF9D68 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		842D958C1C3C28B700AF9D68 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		842D95921C3EBF4F00AF9D68 /* SaleFilterPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaleFilterPopup.xib; sourceTree = "<group>"; };
+		842D95971C3FEEDB00AF9D68 /* ViewListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewListingController.swift; sourceTree = "<group>"; };
 		8442010D1C1EF7AA007D51D0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8442010F1C1EF7C2007D51D0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		8453AA961C1F10B400169629 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 			name = SearchPage;
 			sourceTree = "<group>";
 		};
+		842D95941C3EDFB500AF9D68 /* ViewProperty */ = {
+			isa = PBXGroup;
+			children = (
+				842D95971C3FEEDB00AF9D68 /* ViewListingController.swift */,
+			);
+			name = ViewProperty;
+			sourceTree = "<group>";
+		};
 		84D49DAC1C174E7000ECDA80 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 		84D49DB71C174E7000ECDA80 /* Hoffr */ = {
 			isa = PBXGroup;
 			children = (
+				842D95941C3EDFB500AF9D68 /* ViewProperty */,
 				842D95851C3196E800AF9D68 /* SearchPage */,
 				84D49DB81C174E7000ECDA80 /* AppDelegate.swift */,
 				842D958A1C357ED700AF9D68 /* APIManager.swift */,
@@ -145,6 +158,7 @@
 				84D49DC41C174E7000ECDA80 /* Info.plist */,
 				8453AA961C1F10B400169629 /* User.swift */,
 				842D957F1C317CA100AF9D68 /* TabBarController.swift */,
+				842D95921C3EBF4F00AF9D68 /* SaleFilterPopup.xib */,
 			);
 			path = Hoffr;
 			sourceTree = "<group>";
@@ -271,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842D95931C3EBF4F00AF9D68 /* SaleFilterPopup.xib in Resources */,
 				84D49DC31C174E7000ECDA80 /* LaunchScreen.storyboard in Resources */,
 				84D49DC01C174E7000ECDA80 /* Assets.xcassets in Resources */,
 				84D49DBE1C174E7000ECDA80 /* Main.storyboard in Resources */,
@@ -304,6 +319,7 @@
 				842D95841C3196DA00AF9D68 /* Listing.swift in Sources */,
 				84D49DB91C174E7000ECDA80 /* AppDelegate.swift in Sources */,
 				842D958D1C3C28B700AF9D68 /* SearchResultsController.swift in Sources */,
+				842D95981C3FEEDB00AF9D68 /* ViewListingController.swift in Sources */,
 				8453AA971C1F10B400169629 /* User.swift in Sources */,
 				842D95801C317CA100AF9D68 /* TabBarController.swift in Sources */,
 				8453AA991C1F52CE00169629 /* SearchPageViewController.swift in Sources */,

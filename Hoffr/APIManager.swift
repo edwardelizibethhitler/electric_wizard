@@ -6,7 +6,7 @@
 //  Copyright © 2015 admin. All rights reserved.
 //
 
-//class handles requests to the server api
+//class handles requests to the server api/search engine
 
 import UIKit
 
@@ -14,9 +14,9 @@ class APIManager: NSObject {
 
     static let sharedInstance = APIManager() //make singleton
     
-    
+    //function makes query to server based on query string provided - completion handler deals with JSON results
     func get_JSON(query: String, completion: ((result: NSDictionary) -> Void)){
-        let baseURL = "http://52.30.77.26/api/"
+        let baseURL = "http://52.30.77.26/"
         let query = query
         
         if let url = NSURL(string: baseURL + query){
@@ -42,6 +42,7 @@ class APIManager: NSObject {
         }
     }
     
+    //function gets image from server - query string must have form "property_$id/photo_$id"
     func get_image(query: String, completion: ((image: UIImage?) -> Void)){
         let baseURL = "http://52.30.77.26/uploads/property_photo/"
     
@@ -58,12 +59,13 @@ class APIManager: NSObject {
     
     }
     
-    
+    //custom error message to find out at what point in JSON getting process cockup occurs
     enum JSONError: String, ErrorType {
         case NoData = "Error: no data"
         case ConversionFailed = "Error: conversion from JSON failed"
     }
     
+    //json parser  --- DONT THINK I NEED THIS ANYMORE PROBABLY REMOVE IT
     func jsonParser(url: String ,completionHandler: (NSData?, NSError?) -> NSDictionary?) -> NSURLSessionTask?{
         
         let urlPath = url
